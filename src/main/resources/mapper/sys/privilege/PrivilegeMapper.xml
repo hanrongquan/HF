@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.com.bzl.mapper.sys.privilege.IPrivilegeMapper">
+    <resultMap id="BaseResultMap" type="org.com.bzl.entity.sys.privilege.Privilege">
+        <id column="privilege_id" jdbcType="INTEGER" property="privilegeId"/>
+        <result column="privilege_name" jdbcType="VARCHAR" property="privilegeName"/>
+        <result column="privilege_address" jdbcType="VARCHAR" property="privilegeAddress"/>
+        <result column="privilege_type" jdbcType="INTEGER" property="privilegeType"/>
+        <result column="privilege_is_efficient" jdbcType="INTEGER" property="privilegeIsEfficient"/>
+        <result column="privilege_rank" jdbcType="INTEGER" property="privilegeRank"/>
+        <result column="privilege_remark" jdbcType="VARCHAR" property="privilegeRemark"/>
+        <result column="privilege_create_time" jdbcType="VARCHAR" property="privilegeCreateTime"/>
+    </resultMap>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT * FROM t_privilege where  1=1
+        <if test="privilegeName != null and privilegeName !=''">
+            and privilege_name = #{privilegeName}
+        </if>
+        ORDER BY privilege_id DESC
+    </select>
+
+    <select id="findPrivilegeByNameAndId" resultMap="BaseResultMap">
+        select * from t_privilege where privilege_name = #{privilegeName}
+        <if test="privilegeId != null and privilegeId !=''">
+            and privilege_id !=#{privilegeId}
+        </if> LIMIT 1
+    </select>
+</mapper>
