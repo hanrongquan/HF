@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.com.bzl.mapper.sys.role.IRoleMapper">
-    <resultMap id="BaseResultMap" type="org.com.bzl.entity.sys.role.Role">
+<mapper namespace="org.com.hrq.mapper.sys.role.IRoleMapper">
+    <resultMap id="BaseResultMap" type="org.com.hrq.entity.sys.role.Role">
         <id column="role_id" jdbcType="INTEGER" property="roleId"/>
         <result column="role_parent_id" jdbcType="VARCHAR" property="roleParentId"/>
         <result column="role_name" jdbcType="VARCHAR" property="roleName"/>

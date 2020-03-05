@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.com.bzl.mapper.sys.user.IUserMapper">
-    <resultMap id="BaseResultMap" type="org.com.bzl.entity.sys.user.User">
+<mapper namespace="org.com.hrq.mapper.sys.user.IUserMapper">
+    <resultMap id="BaseResultMap" type="org.com.hrq.entity.sys.user.User">
         <id column="user_id" jdbcType="INTEGER" property="userId"/>
         <result column="user_name" jdbcType="VARCHAR" property="userName"/>
         <result column="user_password" jdbcType="VARCHAR" property="userPassword"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.com.bzl.mapper.sys.menu.IMenuMapper">
-    <resultMap id="BaseResultMap" type="org.com.bzl.entity.sys.menu.Menu">
+<mapper namespace="org.com.hrq.mapper.sys.menu.IMenuMapper">
+    <resultMap id="BaseResultMap" type="org.com.hrq.entity.sys.menu.Menu">
         <id column="menu_id" jdbcType="INTEGER" property="menuId"/>
         <result column="menu_id" jdbcType="INTEGER" property="menuParentId"/>
         <result column="menu_name" jdbcType="VARCHAR" property="menuName"/>

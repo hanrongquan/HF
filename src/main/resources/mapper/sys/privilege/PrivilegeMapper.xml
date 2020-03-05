@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.com.bzl.mapper.sys.privilege.IPrivilegeMapper">
-    <resultMap id="BaseResultMap" type="org.com.bzl.entity.sys.privilege.Privilege">
+<mapper namespace="org.com.hrq.mapper.sys.privilege.IPrivilegeMapper">
+    <resultMap id="BaseResultMap" type="org.com.hrq.entity.sys.privilege.Privilege">
         <id column="privilege_id" jdbcType="INTEGER" property="privilegeId"/>
         <result column="privilege_name" jdbcType="VARCHAR" property="privilegeName"/>
         <result column="privilege_address" jdbcType="VARCHAR" property="privilegeAddress"/>
